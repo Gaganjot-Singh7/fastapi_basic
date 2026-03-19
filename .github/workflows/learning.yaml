@@ -1,0 +1,17 @@
+name: Paji's First Automation
+on:
+  push:
+    branches: [ "main" ] # Jadon main branch te push karoge, eh chalega
+
+jobs:
+  check-my-mac:
+    runs-on: self-hosted # Eh line sab ton zaroori hai!
+    steps:
+      - name: Say Hello
+        run: echo "Satsriakal Gagan! Main tuhade Mac te chal reha haan."
+
+      - name: Show Current Directory
+        run: pwd
+
+      - name: Check Docker Version
+        run: docker --version
